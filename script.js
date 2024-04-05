@@ -1,5 +1,6 @@
-const openModalButton = document.getElementById('open-modal');
-openModalButton.addEventListener('click', function() {
-  const modal = new bootstrap.Modal(document.getElementById('newton-modal'));
-  modal.show();
-});
+var myModal = document.getElementById('newton-modal')
+var myInput = document.querySelectorAll('modal-content')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
